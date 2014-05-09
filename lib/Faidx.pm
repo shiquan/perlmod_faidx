@@ -32,6 +32,11 @@ sub DESTROY {
   fai_destroy($self->{"fai"});
 }
 
+sub destroy {
+  my $self = shift;
+  fai_destroy($self->{"fai"});
+}
+
 require XSLoader;
 XSLoader::load('Faidx', $VERSION);
 

@@ -7,5 +7,5 @@ my $seq = $fetch->getseq($bed);
 print "$seq\n";
 $seq = $fetch->getseq("chr1:2-3");
 print "$seq\n";
-
+$fetch->destroy();
 
