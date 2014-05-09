@@ -27,11 +27,10 @@ sub getseq {
   return $seq;
 }
 
-sub destroy {
+sub DESTROY {
   my $self = shift;
   fai_destroy($self->{"fai"});
 }
-
 
 require XSLoader;
 XSLoader::load('Faidx', $VERSION);
