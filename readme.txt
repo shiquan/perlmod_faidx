@@ -41,3 +41,15 @@ it under the same terms as Perl itself, either Perl version 5.10.1 or,
 at your option, any later version of Perl 5 you may have available.
 
 
+Demo
+
+#!/usr/bin/perl
+use Faidx;
+my $fasta = "test.fa";
+my $bed = "chr1:1-2";
+my $fetch = Faidx->new($fasta);
+my $seq = $fetch->getseq($bed);
+print "$seq\n";
+$seq = $fetch->getseq("chr1:2-3");
+print "$seq\n";
+$fetch->destroy();
