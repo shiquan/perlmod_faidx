@@ -2,7 +2,7 @@ Faidx version 1.0.0
 ==================
 
 This module provide random acces a fasta file by cached index file.
-I modified some function of faidx.c from samtools library to adapt
+I modified some functions of faidx.c from samtools library to adapt
 this module.
 
 INSTALLATION
